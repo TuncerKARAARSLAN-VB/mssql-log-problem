@@ -4,11 +4,11 @@ If your MSSQL Log file is too large, you can minimize your log file with the fol
 
 ```mssql
 
+use USANEWAGE;
+
 BACKUP DATABASE USANEWAGE TO DISK = 'C:\temp\USANEWAGE.bak'
 
 BACKUP LOG USANEWAGE TO DISK = 'C:\temp\USANEWAGE.trn'
-
-use USANEWAGE;
 
 EXEC sp_helpfile;
 
